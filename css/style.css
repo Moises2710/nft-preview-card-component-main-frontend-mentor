@@ -1,0 +1,131 @@
+/* Variables */
+:root {
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body {
+    font-family: Outfit;
+    background-color: var(--Very-dark-blue-main);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 10px;
+    color: var(--Soft-blue);
+    box-shadow: 0px 0px 20px 20px #0c1729, 0px 0px 20px 20px #0c192c;
+}
+
+/* Section 1 */
+
+.section_1 img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/* Section 2 */
+
+.section_2 {
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.section_2 h1 a {
+    display: inline-block;
+    color: var(--White);
+    margin: 20px 0px;
+    text-decoration: none;
+}
+
+.section_2 h1 a:hover {
+    color: var(--Cyan);
+}
+
+.section_2 p {
+    /* font-size: 18px; */
+    color: var(--Soft-blue);
+    margin: 10px 0px;
+    font-weight: 300;
+}
+
+.section_2 .box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_2 .box {
+    display: flex;
+    align-items: center;
+}
+
+.section_2 .box img {
+    margin-inline-end: 5px;
+}
+
+.section_2 .box .cyan {
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.section_2 .box .days {
+    font-weight: 500;
+}
+
+
+
+/* Section 3 */
+
+.section_3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section_3 img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-inline-end: 10px;
+}
+
+.section_3 p a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.section_3 p a:hover {
+    color: var(--Cyan);
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 280px;
+    }
+}
